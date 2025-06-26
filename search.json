@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Proportion of red beads",
+    "section": "",
+    "text": "Can a small scoop of beads reveal the secret makeup of the entire urn?\nUsing simulated data from 1,000 beads, this project investigates how sampling and prediction work together to estimate the true proportion of red beads in a population.However, the validity of our conclusions depends on the assumption that the sample accurately represents the population; if the beads are not thoroughly mixed, even slight sampling bias could distort the results.To predict whether a bead is red, I use a logistic model that incorporates both size and coating status as explanatory variables."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Proportion of red beads",
+    "section": "",
+    "text": "Can a small scoop of beads reveal the secret makeup of the entire urn?\nUsing simulated data from 1,000 beads, this project investigates how sampling and prediction work together to estimate the true proportion of red beads in a population.However, the validity of our conclusions depends on the assumption that the sample accurately represents the population; if the beads are not thoroughly mixed, even slight sampling bias could distort the results.To predict whether a bead is red, I use a logistic model that incorporates both size and coating status as explanatory variables."
+  },
+  {
+    "objectID": "index.html#model-structure",
+    "href": "index.html#model-structure",
+    "title": "Proportion of red beads",
+    "section": "Model Structure",
+    "text": "Model Structure\nWe represent the general form of our model as:\n\\[\nY = \\beta_0 + \\beta_1 X_1 + \\beta_2 X_2 + \\cdots + \\beta_k X_k + \\varepsilon\n\\] We express the fitted model as:\n\\[\n\\widehat{\\text{logit}\\left(P(\\text{color} = \\text{red})\\right)} = -0.66 + 0.85 \\cdot \\text{size} + 1.20 \\cdot \\text{coating}\n\\]\n\n\n[1] TRUE\n\n\n\n\ncharacter(0)\n\n\nRows: 4,000\nColumns: 3\n$ product &lt;chr&gt; \"B000J0LSBG\", \"B000EYLDYE\", \"B0026LIO9A\", \"B00473P8SK\", \"B001S…\n$ review  &lt;chr&gt; \"this stuff is  not stuffing  its  not good at all  save your …\n$ score   &lt;fct&gt; other, great, great, great, great, great, other, great, great,…\n\n\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ forcats   1.0.0     ✔ readr     2.1.5\n✔ lubridate 1.9.4     ✔ stringr   1.5.1\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ readr::col_factor() masks scales::col_factor()\n✖ purrr::discard()    masks scales::discard()\n✖ dplyr::filter()     masks stats::filter()\n✖ stringr::fixed()    masks recipes::fixed()\n✖ dplyr::lag()        masks stats::lag()\n✖ readr::spec()       masks yardstick::spec()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\n\n\n\n\n\n\n\nLogistic Regression Estimates for Predicting Bead Color\n\n\nVariable\nEstimate\nLower 95% CI\nUpper 95% CI\n\n\n\n\n(Intercept)\n0.35\n−0.31\n1.02\n\n\nsize\n0.00\n−0.13\n0.13\n\n\ncoatingyes\n0.11\n−0.15\n0.36\n\n\n\n\n\n\n\n\n\n\n\n\nPredicted probability of red beads by coating status"
+  }
+]
